@@ -1,8 +1,8 @@
 # Analog Read
-[![aread-bb.png](https://i.postimg.cc/dVP2zJ0s/aread-bb.png)](https://postimg.cc/nC29mb7g)
+[![sensors-bb.png](https://i.postimg.cc/hPd9BdPJ/sensors-bb.png)](https://postimg.cc/7fqC1bzD)
 Lectura de entradas anal처gicas usando la funci처n ```analogRead()```
 
-## Funcionnamiento
+## Analog Read
 En una funci처n ```iRead()``` se leen 13 entradas anal처gicas para que la funci처n devuelva un valor promedio.
 
 - El valor que devuelve la funci처n se guarda en una variable global llamada **Input** y se compara con el valor anterior (**Cache**). 
@@ -12,3 +12,12 @@ En una funci처n ```iRead()``` se leen 13 entradas anal처gicas para que la funci�
 
 
 [![aread-esquem-tico.png](https://i.postimg.cc/t433b81h/aread-esquem-tico.png)](https://postimg.cc/K1YkrqDz)
+
+## Sensors
+Usando una LDR, un potencionmetro y un boton, controlamos la luminosidad de un LED:
+- El boton cambia el valor de una variable ```bool``` para ignorar o no los valores del potenciometro y la LDR para mantener encendiendo el LED. 
+- Si la LDR recibe un valor menor a 512, el LED se enciende con una luminosidad de 0% al 100% segun el valor del potenciometro.
+
+Usando otro potenciometro definimos la salida de un servomotor usando la funci처n ```map``` y la libreria ```Servo```
+
+[![sensors-esquem-tico.png](https://i.postimg.cc/Z5Pp9zN4/sensors-esquem-tico.png)](https://postimg.cc/yDdk55nb)
