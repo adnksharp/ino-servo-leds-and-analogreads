@@ -15,6 +15,15 @@ Lectura de entradas analógicas usando la función ```analogRead()```
 
 
 ## Funcionamiento
+### Simple
+#### Variables
+- ```led```: salida PWM a usar.
+
+#### Funcionamiento
+Usando la función ```map``` se lee un valor entre 0 y 255 de una entrada analoga a la que se conecta una LDR.
+
+[![asimple.png](https://i.postimg.cc/TwBYQqs0/asimple.png)](https://postimg.cc/G8JCmYdT)
+
 ### AnalogRead
 #### Variables
 - ```Sensor```: pin analógico a leer.
