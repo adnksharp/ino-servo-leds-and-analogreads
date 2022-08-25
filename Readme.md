@@ -12,6 +12,7 @@ Lectura de entradas analógicas usando la función ```analogRead()```
 - 1 LDR.
 - 2 potenciómetros.
 - [Arduino IDE](https://www.arduino.cc/en/software) o [Arduino CLI](https://arduino.github.io/arduino-cli/0.23/installation/).
+- Librearía `Servo`.
 
 
 ## Funcionamiento
